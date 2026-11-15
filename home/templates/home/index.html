@@ -1,0 +1,546 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecureWay | Your Protection, Our Priority</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            padding: 18px 0;
+        }
+
+        .brand {
+            color: #123b70;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .brand span {
+            color: #16a6a1;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #102f59, #176b87);
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #e0edf5;
+        }
+
+        .main-btn {
+            background-color: #18aaa3;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 7px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .main-btn:hover {
+            background-color: #12847f;
+            color: white;
+        }
+
+        .section-title {
+            color: #123b70;
+            font-weight: bold;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Insurance Partner Cards */
+        #companies .service-card {
+            border: 1px solid #e1eaf2;
+            border-radius: 16px;
+            padding: 35px 20px;
+            background: linear-gradient(145deg, #ffffff, #f3f9fc);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #companies .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 28px rgba(18, 59, 112, 0.12);
+            border-color: #16a6a1;
+        }
+
+        #companies .service-card h5 {
+            color: #123b70;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        #companies .service-card p {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+
+        .service-icon {
+            font-size: 38px;
+        }
+
+        .about-section {
+            background-color: #eaf3f8;
+            padding: 65px 20px;
+        }
+
+        .contact-section {
+            padding: 65px 20px;
+        }
+
+        footer {
+            background-color: #102f59;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 65px 20px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <a class="navbar-brand brand" href="/">
+            Secure<span>Way</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Insurance</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#companies">Our Company Partners</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+
+                <h1>Your Protection,<br>Our Priority.</h1>
+
+                <p class="mt-3">
+                    Secure your future with insurance solutions
+                    designed to protect what matters most.
+                </p>
+
+                <a href="#services" class="main-btn mt-3">
+                    Explore Insurance
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Insurance Services -->
+<section class="py-5" id="services">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Our Insurance Solutions</h2>
+            <p>Explore insurance options for your different needs.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center">
+                    <div class="service-icon">❤️</div>
+                    <h5 class="mt-3">Health Insurance</h5>
+                    <p>Explore options for healthcare protection.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center">
+                    <div class="service-icon">👨‍👩‍👧</div>
+                    <h5 class="mt-3">Life Insurance</h5>
+                    <p>Explore options to protect your family's future.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center">
+                    <div class="service-icon">🚗</div>
+                    <h5 class="mt-3">Motor Insurance</h5>
+                    <p>Explore insurance options for your vehicle.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center">
+                    <div class="service-icon">✈️</div>
+                    <h5 class="mt-3">Travel Insurance</h5>
+                    <p>Explore protection options for your travels.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose SecureWay Section -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Why Choose SecureWay?</h2>
+            <p>Making your insurance journey simple and convenient.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <div class="service-icon">🤝</div>
+                    <h5 class="mt-3">Personal Assistance</h5>
+                    <p>Get guidance to explore insurance options
+                    that match your needs.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <div class="service-icon">📋</div>
+                    <h5 class="mt-3">Easy Information</h5>
+                    <p>Understand policy features and coverage
+                    before making a decision.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <div class="service-icon">💙</div>
+                    <h5 class="mt-3">Customer Support</h5>
+                    <p>We are here to help you with your
+                    insurance enquiries.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Insurance Companies Section -->
+<section class="py-5" id="companies">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Our Insurance Partners</h2>
+            <p>Explore insurance providers and their available solutions.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <img src="{% static 'home/images/starhealthlogo.svg' %}"
+                         alt="Star Health Logo"
+                         style="height: 55px; max-width: 180px; object-fit: contain; margin-bottom: 15px;">
+                
+                    <h5>Star Health</h5>
+                    <p>Health Insurance</p>
+                </div>
+                
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <img src="{% static 'home/images/hdfc.svg' %}"
+                         alt="HDFC ERGO Logo"
+                         style="height: 55px; max-width: 180px; object-fit: contain; margin-bottom: 15px;">
+                    <h5>HDFC ERGO</h5>
+                    <p>Health · Motor · Travel · General</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <img src="{% static 'home/images/newindia.webp' %}"
+                         alt="New India Assurance Logo"
+                         style="height: 55px; max-width: 180px; object-fit: contain; margin-bottom: 15px;">
+                    <h5>New India Assurance</h5>
+                    <p>Health · Motor · Travel · General</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <img src="{% static 'home/images/sbilife.png' %}"
+                         alt="SBI Life Logo"
+                         style="height: 55px; max-width: 180px; object-fit: contain; margin-bottom: 15px;">
+                    <h5>SBI Life</h5>
+                    <p>Life Insurance</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <img src="{% static 'home/images/aditya.webp' %}"
+                         alt="Aditya Birla Sun Life Logo"
+                         style="height: 55px; max-width: 180px; object-fit: contain; margin-bottom: 15px;">
+                    <h5>Aditya Birla Sun Life</h5>
+                    <p>Life Insurance</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <img src="{% static 'home/images/niva.svg' %}"
+                         alt="Niva bupa Logo"
+                         style="height: 55px; max-width: 180px; object-fit: contain; margin-bottom: 15px;">
+                    <h5>Niva Bupa</h5>
+                    <p>Health Insurance</p>
+                </div>
+            </div>
+
+            <!-- <div class="col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <h5>ICICI Lombard</h5>
+                    <p>Health · Motor · Travel · General</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <h5>Tata AIG</h5>
+                    <p>Health · Motor · Travel · General</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <h5>SBI General Insurance</h5>
+                    <p>Health · Motor · Travel · General</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <h5>Care Health Insurance</h5>
+                    <p>Health Insurance</p>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section class="about-section" id="about">
+    <div class="container text-center">
+
+        <h2 class="section-title">Welcome to SecureWay</h2>
+
+        <p class="mt-3">
+            We help customers explore insurance options
+            from different insurance providers.
+            Our goal is to make your insurance journey
+            simple and convenient.
+        </p>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section py-5" id="contact">
+    <div class="container">
+
+        <div class="text-center mb-4">
+            <h2 class="section-title">Need Insurance Assistance?</h2>
+            <p class="mt-3">
+                Contact us to learn more about available insurance options.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+
+                <form method="POST" action="" novalidate>
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        {{ form.name }}
+                        {{ form.name.errors }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mobile Number</label>
+                        {{ form.phone }}
+                        {{ form.phone.errors }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        {{ form.email }}
+                        {{ form.email.errors }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Insurance Type</label>
+                        {{ form.insurance_type }}
+                        {{ form.insurance_type.errors }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Your Message</label>
+                        {{ form.message }}
+                        {{ form.message.errors }}
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="main-btn">
+                            Submit Enquiry
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+{% if success %}
+<script>
+Swal.fire({
+    icon: 'success',
+    title: 'Enquiry Submitted!',
+    text: 'Thank you! We will contact you soon.',
+    confirmButtonText: 'Great!',
+    confirmButtonColor: '#0d6efd'
+});
+</script>
+
+{% elif form.errors %}
+<script>
+Swal.fire({
+    icon: 'error',
+    title: 'Submission Failed!',
+    text: 'Please check the form details and correct the errors.',
+    confirmButtonText: 'OK',
+    confirmButtonColor: '#dc3545'
+});
+</script>
+{% endif %}
+
+
+<!-- Footer -->
+<footer>
+    <h5>SecureWay</h5>
+    <p>Your Protection, Our Priority.</p>
+    <small>© 2026 SecureWay. All rights reserved.</small>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919946328520?text=Hello%20SecureWay,%20I%20need%20insurance%20assistance."
+   target="_blank"
+   rel="noopener noreferrer"
+   style="
+       position: fixed;
+       bottom: 25px;
+       right: 25px;
+       background: #25D366;
+       color: white;
+       padding: 13px 20px;
+       border-radius: 50px;
+       text-decoration: none;
+       font-weight: bold;
+       font-size: 16px;
+       z-index: 9999;
+       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+   ">
+    WhatsApp Us
+</a>
+
+</body>
+</html>
