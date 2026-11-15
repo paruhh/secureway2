@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-cpdl@ot6mq$oi1o&n6^yal(v*!7=6aa1qe2o-+6001&5#89m^v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "https://secureway2-five.vercel.app/"
+]
 
 
 # Application definition
