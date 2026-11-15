@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-cpdl@ot6mq$oi1o&n6^yal(v*!7=6aa1qe2o-+6001&5#89m^v
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "secureway2-five.vercel.app"
+    "securewayinsurance.vercel.app"
 ]
 
 
